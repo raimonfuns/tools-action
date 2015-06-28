@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@import url(foo.css);
+body {
+  margin: 7px;
+  top: 150px;
+  right: 20%; }
+
+h2 {
+  background: #0af;
+  color: #ccc; }
+
+.rounded {
+  border-left-radius: 5px; }
+
+div h1 {
+  color: red; }
+
+p {
+  border-color: red; }
+
+a:hover {
+  color: red; }
+
+.class1, .class2 {
+  border: 1px solid #ddd; }
+
+.class2 {
+  font-size: 120%; }
+
+.left {
+  float: left;
+  margin-left: 10px; }
+
+.right {
+  float: right;
+  margin-right: 10px; }
+
+/* 标准css注释 */
+.foo-scss {
+  background: blue; }
+
+.a_picture {
+  background: url("/images/a.jpg") no-repeat; }
+
+.b_picture {
+  background: url("/images/b.jpg") no-repeat; }
+
+.c_picture {
+  background: url("/images/c.jpg") no-repeat; }
+
+.d_picture {
+  background: url("/images/d.jpg") no-repeat; }
+
+/*# sourceMappingURL=test.css.map */

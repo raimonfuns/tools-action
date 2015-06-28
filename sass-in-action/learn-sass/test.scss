@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+// 变量
+$blue: #0af;
+$grey: #ccc;
+
+$side: left;
+
+$var: 2;
+
+// 计算
+body {
+	margin: (14px/2);
+	top: 50px + 100px;
+	right: $var * 10%;
+}
+// 使用变量
+h2 {
+	background: $blue;
+	color: $grey;
+}
+.rounded {
+	border-#{$side}-radius: 5px;
+}
+// 嵌套
+div {
+	h1 {
+		color: red;
+	}
+}
+p {
+	border: {
+		color: red;
+	}
+}
+a {
+	&:hover {
+		color: red;
+	}
+}
+// 代码重用
+.class1 {
+	border: 1px solid #ddd;
+}
+.class2 {
+	@extend .class1;
+	font-size: 120%;
+}
+// Mixin
+@mixin left {
+	float: left;
+	margin-left: 10px;
+}
+.left {
+	@include left;
+}
+@mixin right($value: 10px) {
+	float: right;
+	margin-right: $value;
+}
+.right{
+	@include right;
+}
+
+// 注释
+/* 标准css注释 */
+// 单行注释，只保留在SASS中
+
+// 插入文件
+@import "foo.scss";
+@import "foo.css";
+
+// each
+@each $member in a, b, c, d {
+	.#{$member}_picture {
+		background: url("/images/#{$member}.jpg") no-repeat;
+	}
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,SAAU;EACT,UAAU,EAAE,IAAI",
+"sources": ["foo.scss"],
+"names": [],
+"file": "foo.css"
+}

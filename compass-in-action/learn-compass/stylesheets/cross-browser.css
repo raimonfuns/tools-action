@@ -1,0 +1,205 @@
+@charset "UTF-8";
+/* line 5, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 9, ../sass/cross-browser.scss */
+body {
+  color: #fff;
+  background: #272822;
+}
+
+/* line 13, ../sass/cross-browser.scss */
+h2 {
+  line-height: 50px;
+  text-align: center;
+}
+
+/* line 17, ../sass/cross-browser.scss */
+.row {
+  text-align: center;
+}
+/* line 19, ../sass/cross-browser.scss */
+.row .dib {
+  padding: 0 20px;
+  height: 25px;
+  line-height: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  background: #0af;
+}
+/* line 26, ../sass/cross-browser.scss */
+.row.parent {
+  background: green;
+}
+/* line 29, ../sass/cross-browser.scss */
+.row .float-box {
+  width: 100px;
+  height: 100px;
+}
+/* line 33, ../sass/cross-browser.scss */
+.row .side {
+  float: left;
+  background: #0af;
+}
+/* line 37, ../sass/cross-browser.scss */
+.row .main {
+  float: right;
+  background: red;
+}
+
+/*这个方案，子元素可以分行*/
+/* line 44, ../sass/cross-browser.scss */
+.dib-wrap {
+  font-size: 0;
+  /* 所有浏览器 */
+  *word-spacing: -1px;
+  /* IE6、7 */
+}
+
+/* line 48, ../sass/cross-browser.scss */
+.dib-wrap .dib {
+  font-size: 12px;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* firefox 中 letter-spacing 会导致脱离普通流的元素水平位移 */
+  /* line 56, ../sass/cross-browser.scss */
+  .dib-wrap {
+    letter-spacing: -5px;
+    /* Safari 等不支持字体大小为 0 的浏览器, N 根据父级字体调节*/
+  }
+}
+/* line 60, ../sass/cross-browser.scss */
+.dib {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 67, ../sass/cross-browser.scss */
+.clearfix {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 71, ../sass/cross-browser.scss */
+ul.horiz {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 62, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+ul.horiz li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 49, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+ul.horiz li:first-child {
+  padding-left: 0;
+}
+/* line 50, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+ul.horiz li:last-child {
+  padding-right: 0;
+}
+/* line 52, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+ul.horiz li.last {
+  padding-right: 0;
+}
+
+/* line 56, icon/*.png */
+.icon-sprite, .icon-edit, .icon-ok {
+  background-image: url('../images/icon-se34c3f58d5.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-edit {
+  background-position: 0 0;
+}
+
+/* line 84, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-ok {
+  background-position: 0 -25px;
+}
+
+/* line 80, ../sass/cross-browser.scss */
+.btn {
+  display: block;
+  width: 25px;
+  height: 25px;
+}

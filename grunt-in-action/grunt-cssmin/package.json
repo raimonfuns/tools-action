@@ -1,0 +1,19 @@
+{
+  "name": "grunt-cssmin",
+  "version": "1.0.0",
+  "description": "cssmin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cssmin"
+  ],
+  "author": "raion",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.12.3",
+    "load-grunt-tasks": "^3.2.0"
+  }
+}

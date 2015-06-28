@@ -1,0 +1,35 @@
+@import "compass/reset";
+@import "compass/css3";
+
+$grey: #272822;
+$blue: #0af;
+body {
+	background: $grey;
+}
+@mixin left($value: 10px) {
+	float: left;
+	margin-left: $value;
+}
+span {
+	@include left(20px);
+}
+.class1 {
+	height: 20px;
+	line-height: 20px;
+}
+.class2 {
+	@extend .class1;
+	font-size: 120%;
+}
+.box {
+	width: 100px;
+	height: 100px;
+	background: $blue;
+	margin: 100px auto;
+}
+.box {
+	@include border-radius(5px);
+}
+.box {
+	@include opacity(0.3);
+}

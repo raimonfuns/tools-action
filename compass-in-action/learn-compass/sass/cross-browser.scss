@@ -1,0 +1,84 @@
+@charset "utf-8";
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities";
+@import "compass/typography";
+
+$grey: #272822;
+$blue: #0af;
+body {
+	color: #fff;
+	background: $grey;
+}
+h2 {
+	line-height: 50px;
+	text-align: center
+}
+.row {
+	text-align: center;
+	.dib {
+		padding: 0 20px;
+		height: 25px;
+		line-height: 25px;
+		@include inline-block;
+		background: $blue;
+	}
+	&.parent {
+		background: green;
+	}
+	.float-box {
+		width: 100px;
+		height: 100px;
+	}
+	.side {
+		float: left;
+		background: $blue;
+	}
+	.main {
+		float: right;
+		background: red;
+	}
+}
+
+/*这个方案，子元素可以分行*/
+.dib-wrap {
+	font-size: 0; /* 所有浏览器 */
+	*word-spacing:-1px;/* IE6、7 */
+}
+.dib-wrap .dib{
+	font-size: 12px;
+	letter-spacing: normal;
+	word-spacing: normal;
+	vertical-align: top;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+/* firefox 中 letter-spacing 会导致脱离普通流的元素水平位移 */
+	.dib-wrap{
+		letter-spacing:-5px;/* Safari 等不支持字体大小为 0 的浏览器, N 根据父级字体调节*/
+	}
+}
+.dib {
+	display: inline-block;
+	*display:inline;
+	*zoom:1;
+}
+
+// 清楚浮动
+.clearfix {
+	@include clearfix;
+}
+
+ul.horiz {
+	@include horizontal-list(4px); 
+}
+
+$icon-spacing: 0px;
+
+@import "icon/*.png";
+@include all-icon-sprites;
+// @include icon-sprites(ok);
+.btn {
+	display: block;
+	width: 25px;
+	height: 25px;
+}
